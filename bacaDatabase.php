@@ -42,7 +42,7 @@ $result = mysqli_query($koneksi, "SELECT * FROM `users`");
 
         <tr>
             <td>
-                <?= $i;?>
+                <?= $i?>
             </td>
             <td>
                 <a href="hapus.php?id=<?= $ambil_result["id"]?>">Hapus</a> | <a href="ubah.php?id=<?= $ambil_result["id"]?>">Ubah</a>
