@@ -5,7 +5,7 @@ if(isset($_GET["pesan"])){
     } elseif ($_GET["pesan"] == "logout"){
         echo "anda sudah logout";
     } elseif ($_GET["pesan"] == "belum login") {
-        echo "Anda harus login dulu untuk mengakses halaman CRUD";
+        echo "Kamu belum Login";
     }
 }?>
 
