@@ -36,9 +36,9 @@ $result = mysqli_query($koneksi, "SELECT * FROM `users`");
                 no whatsapp
             </th>
         </tr>
-
+        <?php $i=1;?>
 <?php while ($ambil_result = mysqli_fetch_assoc($result)):?>
-<?php $i=1;?>
+
 
         <tr>
             <td>
