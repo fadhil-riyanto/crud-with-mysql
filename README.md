@@ -1,8 +1,8 @@
 # CRUD
-Ini adalah proyek crud menggunakan PHP 7 tanpa css.
-Jika ingin berkontibusi kalian bisa memperbaiki patch atau bug di dalamnya
+Ini adalah proyek CRUD menggunakan PHP 7 tanpa CSS.
+Jika ingin berkontribusi, kalian bisa memperbaiki Patch atau Bug di dalamnya
 
 Kalian Juga bisa menambahkan CSS di sini.
-Atau bisa menambahkan javascript sebagai penambahan pengamanan di CRUD ini
+Atau bisa menambahkan Javascript sebagai penambahan pengamanan di CRUD ini
 
 Makasih .....
