@@ -1,4 +1,8 @@
 <?php
+session_start();
+if($_SESSION["status"] != "login"){
+    header("Location: index.php?pesan=belum login");
+}
 //load data dan file file
 require "config.php";
 // ====================
@@ -17,7 +21,7 @@ $result = mysqli_query($koneksi, "SELECT * FROM `users` ORDER BY `id` DESC");
 <body>
     <h1>Daftar teman</h1>
     <hr>
-    <a href="Tambah.php">Tambah data</a>
+    <a href="Tambah.php">Tambah data</a> | <a href="logout.php">Logout</a>
     <table border="1">
         <tr>
             <th>
