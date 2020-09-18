@@ -4,6 +4,6 @@ Jika ingin berkontibusi kalian bisa memperbaiki patch atau bug di dalamnya
 
 Kalian Juga bisa menambahkan CSS di sini.
 Atau bisa menambahkan javascript sebagai penambahan pengamanan di CRUD ini
-Mau edit? Silahkan
+Mau edit? Silahkan.
 
 Makasih .....
