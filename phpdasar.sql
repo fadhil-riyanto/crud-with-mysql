@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 17, 2020 at 02:51 PM
+-- Generation Time: Sep 18, 2020 at 01:58 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.19
 
@@ -32,17 +32,17 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(100) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
-  `no_whatsapp` varchar(15) DEFAULT NULL
+  `no_whatsapp` varchar(15) DEFAULT NULL,
+  `username` varchar(225) NOT NULL,
+  `password` varchar(225) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `no_whatsapp`) VALUES
-(28, 'Lord', 'surya@gmail.com', '9u09086'),
-(29, 'Kharina Qurrotuain Handoyo', 'kharina9@gmail.com', '9083098023'),
-(30, 'Internsial Node', 'orangasingtakkenal@gmail.com', '0895391634433');
+INSERT INTO `users` (`id`, `name`, `email`, `no_whatsapp`, `username`, `password`) VALUES
+(35, 'Internsial Node', 'orangasingtakkenal@gmail.com', '0895391634433', 'admin', 'root');
 
 --
 -- Indexes for dumped tables
@@ -62,7 +62,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
