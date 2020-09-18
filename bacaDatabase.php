@@ -2,7 +2,7 @@
 //load data dan file file
 require "config.php";
 // ====================
-$result = mysqli_query($koneksi, "SELECT * FROM `users`");
+$result = mysqli_query($koneksi, "SELECT * FROM `users` ORDER BY `id` DESC");
 
 ?>
 <!DOCTYPE html>

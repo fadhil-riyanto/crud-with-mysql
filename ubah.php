@@ -27,22 +27,25 @@ $result = mysqli_query($koneksi, "SELECT * FROM `users` WHERE id=$id");
 </head>
 
 <body>
+<h1>Ubah Data</h1>
+<hr>
+<a href="bacaDatabase.php">Batal</a>
     <form action="" method="post">
         
         <ul>
             <li>
                 <label for="name">Nama</label>
-                <input type="text" name="name" id="name" autocomplete="off" value="<?= $ambil_data["name"]?>">
+                <input type="text" name="name" id="name" autocomplete="off" value="<?= $ambil_data["name"]?>" required="yes">
             </li>
 
             <li>
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" autocomplete="off" value="<?= $ambil_data["email"]?>">
+                <input type="text" name="email" id="email" autocomplete="off" value="<?= $ambil_data["email"]?>" required="yes">
             </li>
 
             <li>
                 <label for="no_whatsapp">No telpon</label>
-                <input type="text" name="no_whatsapp" id="no_whatsapp" autocomplete="off" <?= $ambil_data["no_whatsapp"]?>>
+                <input type="text" name="no_whatsapp" id="no_whatsapp" autocomplete="off" value="<?= $ambil_data["no_whatsapp"]?>" required="yes">
             </li>
             <li>
                 <button type="submit" name="submit">Kirim</button>
