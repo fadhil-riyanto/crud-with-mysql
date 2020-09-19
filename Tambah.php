@@ -34,17 +34,17 @@ if(isset($_POST["submit"])){
         <ul>
             <li>
                 <label for="name">Nama</label>
-                <input type="text" name="name" id="name" autocomplete="off" required="yes">
+                <input type="text" name="name" id="name" autocomplete="off" >
             </li>
 
             <li>
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" autocomplete="off" required="yes">
+                <input type="text" name="email" id="email" autocomplete="off" >
             </li>
 
             <li>
                 <label for="no_whatsapp">No telpon</label>
-                <input type="text" name="no_whatsapp" id="no_whatsapp" autocomplete="off" required="yes">
+                <input type="text" name="no_whatsapp" id="no_whatsapp" autocomplete="off" >
             </li>
             <li>
                 <button type="submit" name="submit">Kirim</button>

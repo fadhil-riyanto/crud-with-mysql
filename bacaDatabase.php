@@ -22,49 +22,77 @@ $result = mysqli_query($koneksi, "SELECT * FROM `users` ORDER BY `id` DESC");
     <h1>Daftar teman</h1>
     <hr>
     <a href="Tambah.php">Tambah data</a> | <a href="logout.php">Logout</a>
-    <table border="1">
-        <tr>
-            <th>
-                No
-            </th>
-            <th>
-                Aksi For admin
-            </th>
-            <th>
-                Nama
-            </th>
-            <th>
-                email
-            </th>
-            <th>
-                no whatsapp
-            </th>
-        </tr>
-        <?php $i=1;?>
-<?php while ($ambil_result = mysqli_fetch_assoc($result)):?>
+    <div id="keyword">
+        <input type="text" name="keyword" placeholder="Cari data...!">
+    </div>
+
+    <div id="container">
+        <table border="1">
+            <tr>
+                <th>
+                    No
+                </th>
+                <th>
+                    Aksi For admin
+                </th>
+                <th>
+                    Nama
+                </th>
+                <th>
+                    email
+                </th>
+                <th>
+                    no whatsapp
+                </th>
+            </tr>
+            <?php $i=1;?>
+            <?php while ($ambil_result = mysqli_fetch_assoc($result)):?>
 
 
-        <tr>
-            <td>
-                <?= $i?>
-            </td>
-            <td>
-                <a href="hapus.php?id=<?= $ambil_result["id"]?>">Hapus</a> | <a href="ubah.php?id=<?= $ambil_result["id"]?>">Ubah</a>
-            </td>
-            <td>
-            <?= $ambil_result["name"]?>
-            </td>
-            <td>
-            <?= $ambil_result["email"]?>
-            </td>
-            <td>
-            <?= $ambil_result["no_whatsapp"]?>
-            </td>
-        </tr>
-        <?php $i++?>
-<?php endwhile;?>
+            <tr>
+                <td>
+                    <?= $i?>
+                </td>
+                <td>
+                    <a href="hapus.php?id=<?= $ambil_result["id"]?>">Hapus</a> | <a
+                        href="ubah.php?id=<?= $ambil_result["id"]?>">Ubah</a>
+                </td>
+                <td>
+                    <?= $ambil_result["name"]?>
+                </td>
+                <td>
+                    <?= $ambil_result["email"]?>
+                </td>
+                <td>
+                    <?= $ambil_result["no_whatsapp"]?>
+                </td>
+            </tr>
+            <?php $i++?>
+            <?php endwhile;?>
 
-    </table>
+        </table>
+    </div>
+    <script>
+
+        var keyword = documentGetElementById('keyword');
+        var container = documentGetElementById('container');
+
+        keyword.addEventListener('keyup', function () {
+
+
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    console.log('Halo');
+                }
+
+            }
+
+            xhr.open('GET', 'tesk.txt', true);
+            xhr.send();
+        });
+
+    </script>
 </body>
 
 </html>
