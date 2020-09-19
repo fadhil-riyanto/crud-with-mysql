@@ -4,7 +4,7 @@ require "config.php";
  $username = $_POST["username"];
  $password = $_POST["password"];
 
-$data = mysqli_query($koneksi, "SELECT * FROM `phpdasar`.`users` WHERE username = '$username' AND password = '$password'");
+$data = mysqli_query($koneksi, "SELECT * FROM `phpdasar`.`login_system` WHERE username = '$username' AND password = '$password'");
 $row = mysqli_num_rows($data);
  if ($row > 0){
      $_SESSION["username"] = $username;
