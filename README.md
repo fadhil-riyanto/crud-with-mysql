@@ -1,9 +1,13 @@
 # CRUD
-Ini adalah proyek crud menggunakan PHP 7 tanpa css.
-Jika ingin berkontibusi kalian bisa memperbaiki patch atau bug di dalamnya
+This is a project using PHP 7 without css.
+If you want to contribute, you can fix any patches or bugs in it
 
-Kalian Juga bisa menambahkan CSS di sini.
-Atau bisa menambahkan javascript sebagai penambahan pengamanan di CRUD ini
-Mau edit? Silahkan.
+You can also add CSS here.
+Or you can add javascript as an additional security in this CRUD
+Want to edit? Please.
 
-Makasih .....
+Thank you for
+
+- popper.min.js
+- jquery
+- bootstrap
