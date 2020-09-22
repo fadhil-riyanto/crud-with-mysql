@@ -1,11 +1,11 @@
 <?php
 if(isset($_GET["pesan"])){
     if ($_GET["pesan"] == "gagal"){
-        echo "Login gagal, ulagi lagi";
+        echo "<script>alert('Session gagal di buat di server...ulangi!');</script>";
     } elseif ($_GET["pesan"] == "logout"){
-        echo "anda sudah logout";
+        echo "<script>alert('Session udah di destroy');</script>";
     } elseif ($_GET["pesan"] == "belum login") {
-        echo "Kamu belum Login";
+        echo "<script>alert('Kamu belum login lah....Login dulu!');</script>";
     }
 }?>
 

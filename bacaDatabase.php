@@ -104,11 +104,11 @@ $result = mysqli_query($koneksi, "SELECT * FROM `users` ORDER BY `id` DESC");
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                </div>
-                <div class="modal-body">
-                    <P>Nama : Fadhil Riyanto
-                    <p>Pekerjaan : Programmer (Newbie)</p>
+                </div>il Riyanto
+                    <p>Lagu : Banyak</p>
 
+                <div class="modal-body">
+                    <P>Nama : Fadh
                     <p>Hobi : Coding</p>
                 </div>
                 <div class="modal-footer">
