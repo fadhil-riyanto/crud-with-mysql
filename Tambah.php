@@ -6,7 +6,7 @@ if($_SESSION["status"] != "login"){
 $koneksi = mysqli_connect("localhost","root","root","phpdasar");
 //load selesai
 
-if(isset($_POST["submit"])){
+if(isset($_POST["submit" === 1])){
     $name = $_POST["name"];
     $email = $_POST["email"];
     $no_whatsapp = $_POST["no_whatsapp"];
